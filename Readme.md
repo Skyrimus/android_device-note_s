@@ -1,6 +1,6 @@
 Cubot Note S 
 ===========
-Device Tree N
+Device Tree M
 ------------------
 
 Device Tree for Cubot Note S.
@@ -11,25 +11,18 @@ Device Tree for Cubot Note S.
 - 4150MAh battery capacity
 - 2GB RAM
 
-Bug	tracker
+Info
 ---------------
-- [x] battery drain on daily use (compared to earlier version)
-- [x] Can not connect to hidden WIFI / WPS
-- [x] import contacts from sim card
-- [x] Some apps fast crash
-- [x] Blackscreen after unlock
-- [x] GPS with device only
-- [x] FM Radio
-- [ ] ril is not stable
-- [ ] Video recording inverted color (workarround: third party camera)
+
+You can see the result on needrom:
+https://www.needrom.com/download/lineageos13/
+
+I'll upload all my changes for the ROMs here. Supports MiraVision. 
+
+Next step is to built-in tap2wake for the device. 
 
 How to git
 ---------------
-- cd ~/android/LOS141
-- repo init -u https://github.com/LineageOS/android.git -b cm-14.1
+- cd ~/android/LOS13
+- repo init -u https://github.com/LineageOS/android.git -b cm-13.0
 - repo sync -c
-
-Result
----------------
-You can see the result on needrom:
-https://www.needrom.com/download/n-lineageos-14-1/
