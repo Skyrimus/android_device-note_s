@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<project name="seluce/android_device_cubot_note_s-n" path="device/CUBOT/NOTE_S"/>
+<project name="seluce/android_vendor_cubot_note_s-n" path="vendor/CUBOT/NOTE_S"/>
+</manifest>
