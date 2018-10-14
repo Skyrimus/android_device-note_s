@@ -14,8 +14,9 @@ Device Tree for Cubot Note S.
 Bug	tracker
 ---------------
 - [x] battery drain on daily use (compared to earlier version)
+- [x] bluetooth (A2DP) sound on speakers
 - [x] Can not connect to hidden WIFI / WPS
-- [x] import contacts from sim card
+- [x] Import contacts from sim card
 - [x] Some apps fast crash
 - [x] Blackscreen after unlock
 - [x] GPS with device only
