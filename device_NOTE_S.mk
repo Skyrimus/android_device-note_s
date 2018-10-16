@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ecc_list.xml:system/etc/ecc_list.xml \
     $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
 
-# GPS
+# AGPS
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
@@ -142,7 +142,7 @@ PRODUCT_PACKAGES += \
     libmrdump \
     mrdump_tool
 
-##GPS
+# GPS
 PRODUCT_PACKAGES += \
 	gps.mt6580
 
@@ -151,8 +151,6 @@ PRODUCT_PACKAGES += \
 	MiraVision
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_NOTE_S
-# PRODUCT_DEVICE := NOTE_S
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
