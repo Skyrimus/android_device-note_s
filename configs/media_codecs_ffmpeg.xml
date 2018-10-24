@@ -109,6 +109,6 @@
             <Limit name="size" min="2x2" max="2048x2048" />
             <Limit name="alignment" value="2x2" />
             <Feature name="adaptive-playback" />
-		</MediaCodec>
+        </MediaCodec>
     </Decoders>
 </Included>
