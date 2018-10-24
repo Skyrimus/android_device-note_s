@@ -128,7 +128,7 @@ BOARD_SEPOLICY_DIRS := \
 POLICYVERS := 29
 
 # Seccomp filter
-BOARD_SECCOMP_POLICY += device/CUBOT/NOTE_S/seccomp
+# BOARD_SECCOMP_POLICY += device/CUBOT/NOTE_S/seccomp
 
 BLOCK_BASED_OTA := false
 TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so
