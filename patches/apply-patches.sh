@@ -33,5 +33,6 @@ patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0002-fix
 cd ../..
 cd packages/apps/Settings
 patch -p1 < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0001-add-MiraVision-in-Settings.patch
+patch -p1 -b < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0002-android_settings_developer_info.patch
 cd ../../..
 
