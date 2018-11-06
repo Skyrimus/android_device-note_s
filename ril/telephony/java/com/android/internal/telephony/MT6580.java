@@ -55,6 +55,7 @@ public class MT6580 extends RIL implements CommandsInterface {
     private static final int RIL_REQUEST_EMERGENCY_DIAL = 2087;
     private static final int RIL_REQUEST_SET_ECC_SERVICE_CATEGORY = 2088;
     private static final int RIL_REQUEST_SET_ECC_LIST = 2089;
+    private static final int REFRESH_SESSION_RESET = 6; /* Session reset */
 
     private int[] dataCallCids = { -1, -1, -1, -1, -1 };
 
