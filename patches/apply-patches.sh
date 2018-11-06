@@ -32,9 +32,6 @@ cd external/wpa_supplicant_8
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0001-Ignore-fake-nvram-wifi.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0002-fix-wlan-hidden-wifi-scan.patch
 cd ../..
-cd external/icu
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/0001-android_external_icu.patch
-cd ../..
 cd packages/apps/Settings
 patch -p1 < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0001-add-MiraVision-in-Settings.patch
 patch -p1 -b < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0002-android_settings_developer_info.patch
