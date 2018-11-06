@@ -4,6 +4,7 @@ cd system/core
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/0001-Remove-CAP_SYS_NICE-from-surfaceflinger.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/0004-libnetutils-add-MTK-bits-ifc_ccmni_md_cfg.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/0012-PATCH-xen0n-some-MTK-services-e.g.-ril-daemon-mtk-re.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/LogcatFix/0012-Fix-Liblog-printif.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/LogcatFix/0013-Prevent-spamming-audio.patch
 cd ../..
 cd bionic
@@ -27,6 +28,7 @@ cd system/netd
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/0010-wifi-tethering-fix.patch
 cd ../..
 cd external/wpa_supplicant_8
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/0001-Ignore-fake-nvram-wifi.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/0005-fix-wlan-hidden-wifi-scan.patch
 cd ../..
 cd packages/apps/Settings
