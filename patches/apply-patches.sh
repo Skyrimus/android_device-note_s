@@ -17,13 +17,13 @@ cd frameworks/av
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_av/0001-frameworks_av.patch
 cd ../..
 cd frameworks/native
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/framworks_native/0001-frameworks_native.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_native/0001-frameworks_native.patch
 cd ../..
 cd frameworks/base
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/framework_base/0001-Fix-Minior-Bugs.patch
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/framework_base/0002-frameworks_base.patch
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/framework_base/0003-fix-out-of-memory-gl-crashes.patch
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/framework_base/0004-MTK-Use-Kernel-Based-Voltage-Value.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0001-Fix-Minior-Bugs.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0002-frameworks_base.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0003-fix-out-of-memory-gl-crashes.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0004-MTK-Use-Kernel-Based-Voltage-Value.patch
 cd ../..
 cd system/netd
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_netd/0001-wifi-tethering-fix.patch
@@ -31,6 +31,9 @@ cd ../..
 cd external/wpa_supplicant_8
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0001-Ignore-fake-nvram-wifi.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0002-fix-wlan-hidden-wifi-scan.patch
+cd ../..
+cd external/icu
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/0001-android_external_icu.patch
 cd ../..
 cd packages/apps/Settings
 patch -p1 < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0001-add-MiraVision-in-Settings.patch
