@@ -17,6 +17,10 @@ import /init.trace.rc
 on early-init
     # Turn off backlight on blank
     write /sys/class/leds/lcd-backlight/trigger "backlight"
+	
+    # mount the debugfs
+    mount debugfs none /sys/kernel/debug/
+    chmod 0755 /sys/kernel/debug
 
 on init
     export LD_PRELOAD libsigchain.so:libxlog.so:libmtk_symbols.so
@@ -170,6 +174,8 @@ on post-fs-data
 
 # -----------------------
 # Add by MTK
+# -----------------------
+
     # md32 boot
     chown root system /dev/md32
     chmod 0440 /dev/md32
@@ -671,6 +677,11 @@ on post-fs-data
 	
     #create directory /data/subt for subtitle
     mkdir /mnt/subt/ 0770 media media
+	
+	# Battery Voltage
+	chmod 0666 /sys/class/power_supply/battery/BatterySenseVoltage
+
+# -----------------------	
 # End of adding by MTK drivers
 # -----------------------
 
