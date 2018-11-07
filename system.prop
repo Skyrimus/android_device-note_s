@@ -36,7 +36,7 @@ ro.opengles.version=131072
 debug.hwui.render_dirty_regions=false
 
 # RIL
-rild.libpath=mtk-ril.so
+rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 ro.telephony.default_network=0
 
