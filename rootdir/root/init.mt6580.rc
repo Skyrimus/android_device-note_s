@@ -21,6 +21,23 @@ on early-init
     # mount the debugfs
     mount debugfs none /sys/kernel/debug/
     chmod 0755 /sys/kernel/debug
+	
+    service surfaceflinger /system/bin/surfaceflinger
+    class core
+    user root
+    group graphics drmrpc
+    onrestart restart zygote
+	
+    service drm /system/bin/drmserver
+    class main
+    user drm
+    group drm system inet drmrpc
+	
+    service media /system/bin/mediaserver
+    class main
+    user root
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm qcom_diag
+    ioprio rt 4
 
 on init
     export LD_PRELOAD libsigchain.so:libxlog.so:libmtk_symbols.so
