@@ -24,8 +24,9 @@ cd frameworks/base
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0001-Fix-Minior-Bugs.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0002-frameworks_base.patch
 # patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0003-fix-out-of-memory-gl-crashes.patch
-# patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0005-fixing-of-hwui-crashing.patch
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0004-fixing-of-hwui-crashing.patch
+# patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0004-fixing-of-hwui-crashing.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0005-fixing-of-hwui-crashing.patch
+
 cd ../..
 cd system/netd
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_netd/0001-wifi-tethering-fix.patch
