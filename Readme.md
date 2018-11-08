@@ -6,10 +6,11 @@ Device Tree N
 Device Tree for Cubot Note S.
 
 - MT6580 Chipset
-- marshmallow 6.0 (3.18.19 Kernel)
+- Marshmallow 6.0 (Kernel 3.18.19 )
 - 5,5" 1280x720 display
 - 4150MAh battery capacity
-- 2GB RAM
+- 2GB RAM, 16GB internal storage
+- 8MP / 5MP Camera
 
 Bug	tracker
 ---------------
@@ -21,8 +22,10 @@ Bug	tracker
 - [x] Blackscreen after unlock
 - [x] GPS with device only
 - [x] FM Radio
-- [ ] ril is not stable
-- [ ] Video recording inverted color (workarround: third party camera)
+- [x] ril is not stable
+- [ ] Video recording inverted color (workarround: any third party camera)
+- [ ] some Media Codecs does not work on Nougat 
+- [ ] some app glitches are present (app crashes has been fixed, glitches are left)
 
 How to git
 ---------------
