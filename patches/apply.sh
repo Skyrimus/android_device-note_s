@@ -10,6 +10,7 @@ cd -
 cp 0004-libnetutils-add-MTK-bits.patch ../../../../system/core/0004-libnetutils-add-MTK-bits.patch
 cd ../../../../system/core
 patch -p1 <0004-libnetutils-add-MTK-bits.patch
+patch -p1 <0006-healthd-correctly-report-battery-voltage-on-MTK-kernels.patch
 
 cd -
 cp bt.patch ../../../../system/bt.patch
