@@ -1,0 +1,56 @@
+From 6966dfe3f2e71546fab3fe88cf33f1162181055a Mon Sep 17 00:00:00 2001
+From: seluce <ferris.daehn@outlook.de>
+Date: Thu, 8 Nov 2018 23:38:15 +0100
+Subject: [PATCH] show-carrier-name-
+
+Change-Id: I8d36f96d96ba2b343b197fc9b92995f91ae8f46f
+---
+ .../statusbar/policy/MobileSignalController.java   |  17 ++-
+
+diff --git a/packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java b/packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java
+index 866c5ae..ef3df19 100644
+--- a/packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java
++++ b/packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java
+@@ -92,6 +92,11 @@ public class MobileSignalController extends SignalController<
+ 
+         String networkName = info.getCarrierName() != null ? info.getCarrierName().toString()
+                 : mNetworkNameDefault;
++	if (isNumeric(networkName)) {
++            String displayName = info.getDisplayName() != null? info.getDisplayName().toString()
++                : mNetworkNameDefault;
++            networkName = displayName;
++        }
+         mLastState.networkName = mCurrentState.networkName = networkName;
+         mLastState.networkNameData = mCurrentState.networkNameData = networkName;
+         mLastState.enabled = mCurrentState.enabled = hasMobileData;
+@@ -100,6 +105,14 @@ public class MobileSignalController extends SignalController<
+         updateDataSim();
+     }
+ 
++        private boolean isNumeric(String str) {
++        for (char c : str.toCharArray()) {
++            if (!Character.isDigit(c)) return false;
++        }
++        return true;
++    }
++
++
+     public void setConfiguration(Config config) {
+         mConfig = config;
+         mapIconSets();
+@@ -360,10 +373,10 @@ public class MobileSignalController extends SignalController<
+         StringBuilder str = new StringBuilder();
+         StringBuilder strData = new StringBuilder();
+         if (showPlmn && plmn != null) {
+-            str.append(plmn);
++            if (!isNumeric(plmn)) str.append(plmn);
+             strData.append(plmn);
+         }
+-        if (showSpn && spn != null) {
++         if (spn != null) {
+             if (str.length() != 0) {
+                 str.append(mNetworkNameSeparator);
+             }
+-- 
+2.7.4
+

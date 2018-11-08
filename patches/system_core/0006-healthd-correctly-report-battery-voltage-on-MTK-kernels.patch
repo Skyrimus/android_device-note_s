@@ -24,3 +24,5 @@ index 6b6676a689..3fa042cd5b 100644
  
      if (!mHealthdConfig->batteryCurrentNowPath.isEmpty())
          props.batteryCurrent = getIntField(mHealthdConfig->batteryCurrentNowPath) / 1000;
+--
+2.7.4		 
