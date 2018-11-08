@@ -6,6 +6,7 @@ patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0002-Prevent-spamming-
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0003-Remove-CAP_SYS_NICE-from-surfaceflinger.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0004-libnetutils-add-MTK-bits-ifc_ccmni_md_cfg.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0005-PATCH-xen0n-some-MTK-services-e.g.-ril-daemon-mtk-re.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0006-healthd-correctly-report-battery-voltage-on-MTK-kernels.patch
 cd ../..
 cd bionic
 patch -p1 < ../device/CUBOT/NOTE_S/patches/bionic/0001-Apply-LIBC-version-to-__pthread_gettid.patch
@@ -23,7 +24,7 @@ cd frameworks/base
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0001-Fix-Minior-Bugs.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0002-frameworks_base.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0003-fix-out-of-memory-gl-crashes.patch
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0004-MTK-Use-Kernel-Based-Voltage-Value.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/frameworks_base/0004-show-carrier-name.patch
 cd ../..
 cd system/netd
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_netd/0001-wifi-tethering-fix.patch
