@@ -6,7 +6,7 @@ patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0002-Prevent-spamming-
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0003-Remove-CAP_SYS_NICE-from-surfaceflinger.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0004-libnetutils-add-MTK-bits-ifc_ccmni_md_cfg.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0005-PATCH-xen0n-some-MTK-services-e.g.-ril-daemon-mtk-re.patch
-patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0006-healthd-correctly-report-battery-voltage-on-MTK-kernels
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0006-healthd-correctly-report-battery-voltage-on-MTK-kernels.patch
 cd ../..
 cd bionic
 patch -p1 < ../device/CUBOT/NOTE_S/patches/bionic/0001-Apply-LIBC-version-to-__pthread_gettid.patch
