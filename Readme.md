@@ -39,8 +39,8 @@ You can see the result on needrom: [LineageOS14.1] (https://www.needrom.com/down
 
 Credits
 ---------------
-- @github/Rock12
-- @github/pedropereira22
-- @github/ibrahim1973
-- @github/svoboda18
-- Andrey Litvin (4PDA)
+@github/Rock12
+@github/pedropereira22
+@github/ibrahim1973
+@github/svoboda18
+Andrey Litvin (4PDA)
