@@ -37,3 +37,11 @@ Result
 ---------------
 You can see the result on needrom:
 https://www.needrom.com/download/n-lineageos-14-1/
+
+Credits
+---------------
+- Rock12 (GitHub avaible)
+- Pedro P DarKKiller (GitHub avaible)
+- Ibrahim Fathelbab (GitHub avaible)
+- SaMad SegMane (svoboda18) (GitHub avaible)
+- Andrey Litvin
