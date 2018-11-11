@@ -3,8 +3,6 @@ Cubot Note S
 Device Tree for LineageOS 13.0
 ------------------
 
-Device Tree for Cubot Note S.
-
 | Device | NOTE S |
 | ------ | ------ |
 | Chipset | MT6580 |
@@ -20,7 +18,7 @@ Bug	tracker
 
 Result
 ---------------
-You can see the result on needrom: [LineageOS14.1 on needrom.com](https://www.needrom.com/download/lineageos13)
+You can see the result on needrom: [LineageOS13.0 on needrom.com](https://www.needrom.com/download/lineageos13)
 
 Credits
 ---------------
