@@ -3,8 +3,6 @@ Cubot Note S
 Device Tree for LineageOS 14.1
 ------------------
 
-Device Tree for Cubot Note S.
-
 | Device | NOTE S |
 | ------ | ------ |
 | Chipset | MT6580 |
@@ -40,4 +38,3 @@ Credits
 * ibrahim1973 ([Github](https://github.com/ibrahim1973))
 * svoboda18 ([Github](https://github.com/svoboda18))
 * Andrey Litvin (4PDA)
-```
