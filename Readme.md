@@ -1,16 +1,18 @@
 Cubot Note S 
 ===========
-Device Tree N
+Device Tree for LineageOS 14.1
 ------------------
 
 Device Tree for Cubot Note S.
 
-- MT6580 Chipset
-- Marshmallow 6.0 (Kernel 3.18.19 )
-- 5,5" 1280x720 display
-- 4150MAh battery capacity
-- 2GB RAM, 16GB internal storage
-- 8MP / 5MP Camera
+| Device | NOTE S |
+| ------ | ------ |
+| Chipset | MT6580 |
+| Kernel |  Marshmallow 6.0 (3.18.19) |
+| Display | 5,5" 1280x720 |
+| Battery | 4150MAh |
+| Storage |2GB RAM, 16GB storage |
+| Camera | 8MP rear / 5MP front |
 
 Bug	tracker
 ---------------
@@ -27,13 +29,15 @@ Bug	tracker
 - [ ] some Media Codecs does not work on Nougat 
 - [ ] some app glitches are present (app crashes has been fixed, glitches are left)
 
-How to git
----------------
-- cd ~/android/LOS141
-- repo init -u https://github.com/LineageOS/android.git -b cm-14.1
-- repo sync -c
-
 Result
 ---------------
-You can see the result on needrom:
-https://www.needrom.com/download/n-lineageos-14-1/
+You can see the result on needrom: [LineageOS14.1 on needrom.com](https://www.needrom.com/download/n-lineageos-14-1)
+
+Credits
+---------------
+* Rock12 ([Github](https://github.com/rock12))
+* pedropereira22 ([Github](https://github.com/pedropereira22))
+* ibrahim1973 ([Github](https://github.com/ibrahim1973))
+* svoboda18 ([Github](https://github.com/svoboda18))
+* Andrey Litvin (4PDA)
+```
