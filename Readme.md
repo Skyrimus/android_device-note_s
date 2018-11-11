@@ -35,10 +35,9 @@ You can see the result on needrom: [LineageOS14.1 on needrom.com](https://www.ne
 
 Credits
 ---------------
-```sh
-> Rock12 (Github)
-> pedropereira22 (Github)
-> ibrahim1973 (Github)
-> svoboda18 (Github)
-> Andrey Litvin (4PDA)
+* Rock12 ([Github](https://github.com/rock12))
+* pedropereira22 ([Github](https://github.com/pedropereira22))
+* ibrahim1973 ([Github](https://github.com/ibrahim1973))
+* svoboda18 ([Github](https://github.com/svoboda18))
+* Andrey Litvin (4PDA)
 ```
