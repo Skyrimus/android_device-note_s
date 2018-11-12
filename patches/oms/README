@@ -1,0 +1,13 @@
+WHAT IT DOES?
+=============
+
+Adds OMS support on LineageOS14.1
+
+HOW TO USE IT?
+==============
+
+Must be first patched directly after fresh LineageOS14.1 repo sync
+patches needs to stay here: $REPO/device/*/*/patches/oms
+now, start patches: 
+1. cd device/CUBOT/NOTE_S/patches/oms
+2. bash oms.sh
