@@ -22,7 +22,7 @@ sleep 1
 
 echo -e "\n Finded LOS Directoty: $LOS_REPO"
 sleep 0.5
-echo -e "\n Stat Patching.."
+echo -e "\n Start Patching.."
 sleep 1.5
 cd $CURRENT_DIR
 bash oms_patches.sh $LOS_REPO
