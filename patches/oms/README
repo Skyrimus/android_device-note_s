@@ -11,3 +11,8 @@ Patches needs to stay here: $REPO/device/CUBOT/NOTE_S/patches/oms
 now start patches: 
 1. cd device/CUBOT/NOTE_S/patches/oms
 2. bash apply-oms.sh
+
+Notice
+==============
+OMS for LineageOS14.1 is outdated and not all Themes are supported up to 100%
+Some themes can have some issues, so you need to try it out if they're work.
