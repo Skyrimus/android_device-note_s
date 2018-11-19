@@ -261,7 +261,6 @@ public class MT6580 extends RIL implements CommandsInterface {
         String rawefId = p.readString();
         response.efId   = rawefId == null ? 0 : Integer.parseInt(rawefId);
         response.aid = p.readString();
-        
         if (response.refreshResult > IccRefreshResponse.REFRESH_RESULT_RESET) {
             if (response.refreshResult == REFRESH_SESSION_RESET) {
                 response.refreshResult = IccRefreshResponse.REFRESH_RESULT_RESET;
