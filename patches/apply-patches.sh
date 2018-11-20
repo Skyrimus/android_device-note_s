@@ -1,5 +1,10 @@
 #!/bin/bash
 cd ../../../..
+cd packages/apps/Settings
+patch -p1 < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0001-add-MiraVision-in-Settings.patch
+patch -p1 -b < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0002-android_settings_developer_info.patch
+git clean -f -d
+cd ../../..
 cd system/core
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0001-Fix-Liblog-printif.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0002-Prevent-spamming-audio.patch
@@ -33,8 +38,3 @@ cd external/wpa_supplicant_8
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0001-Ignore-fake-nvram-wifi.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/external_wpa_supplicant_8/0002-fix-wlan-hidden-wifi-scan.patch
 cd ../..
-cd packages/apps/Settings
-patch -p1 < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0001-add-MiraVision-in-Settings.patch
-patch -p1 -b < ../../../device/CUBOT/NOTE_S/patches/package_apps_settings/0002-android_settings_developer_info.patch
-cd ../../..
-
