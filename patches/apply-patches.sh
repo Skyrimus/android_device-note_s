@@ -12,6 +12,7 @@ patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0003-Remove-CAP_SYS_NI
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0004-libnetutils-add-MTK-bits-ifc_ccmni_md_cfg.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0005-PATCH-xen0n-some-MTK-services-e.g.-ril-daemon-mtk-re.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0006-healthd-correctly-report-battery-voltage-on-MTK-kernels.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0007-use-mtk-serial-number.patch
 cd ../..
 cd bionic
 patch -p1 < ../device/CUBOT/NOTE_S/patches/bionic/0001-Apply-LIBC-version-to-__pthread_gettid.patch
