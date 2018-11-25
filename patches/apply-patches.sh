@@ -9,6 +9,7 @@ cd system/core
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0001-libnetutils-add-MTK-bits.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0002-init-double-the-number-of-available-environment-variables.patch
 patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0003-healthd-correctly-report-battery-voltage-on-MTK-kernels.patch
+patch -p1 < ../../device/CUBOT/NOTE_S/patches/system_core/0004-use-mtk-serial-number.patch
 cd ../..
 cd system
 patch -p1 < ../device/CUBOT/NOTE_S/patches/system_netd/0001-wifi-tethering-fix.patch
